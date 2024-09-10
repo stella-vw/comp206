@@ -1,0 +1,32 @@
+Permissions
+=============
+Split into groups of 3: first is owner, second is group (excludes owner), third is everyone else (excludes owner and group)
+
+Octal notation --> split each number and convert to binary then overlay with rwxr-x--x to see if have permission
+
+	ex. 644 --> 110100100 --> rw-r--r--
+
+
+Standard Streams
+================
+
+- program: something you can run on a computer
+- process: a running instance of a program
+	- each process has an ID num. called process ID (PID)
+
+- each process is started by another process except for PID 1 which the kernel starts
+
+- init systems: PID 1 programs
+	- many Linux use systemd as init system
+
+- each opened file gets ID num called file descriptor
+- process A spawns a new process B --> A is the parent B is child
+	- B inherits all the open file descriptors of its parents
+
+- each process has 3 special file descriptors:
+	- FD 0 --> standard input (stdin)
+	- FD 1 --> standard output (stdout)
+	- FD 2 --> standard error (stderr)
+
+
+
