@@ -28,5 +28,12 @@ Standard Streams
 	- FD 1 --> standard output (stdout)
 	- FD 2 --> standard error (stderr)
 
+Redirection
+============
+takes stdin from a file or send stdout/err to a file
 
-
+- redirct stdout to a file --> command > output.txt
+- redirect stderr to a file --> command 2> errors.txt
+- redirect both stderr and stdout command 2> errors.txt > output.txt [stderr goes to errors.txt. stdout goes to output.txt]
+- redirect stdout and stderr to same file command 2> errors.txt >&2
+- take stdin from a file --> command < input.txt
