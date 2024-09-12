@@ -1,0 +1,49 @@
+sep12 notes
+
+w provieds detailed information about the users
+
+PIPING ( | )
+=======
+
+w | less
+ - makes stdout w the stdin of less
+ - w prints out a table
+
+w | cut -d ' ' -f 1
+ - -d: delimiter --> seperates by chosen char
+ - cut the strings by spaces and select the first entry [-f is field]
+
+w | sed 's/ \+/ /g' 
+- 'substitute/what to substitute \one+ of what is being substituted/ /global (finds all matches, w/o g, only does the first entry'
+
+| sort
+ - sorts programs alabetically
+
+| uniq
+ - collapses same programs into one entry
+
+man [command]
+ - shows manual page for command
+
+| uniq -c 
+ - counts how many of each program is being used
+
+wc - word count
+
+grep - searches for input
+
+
+VARIABLES
+===========
+
+$PATH - path variable
+
+echo - print statement of bash
+
+echo $PATH prints out colon seperated list of where programs are found
+
+$HOME - home directory bath
+
+EDITOR
+
+variables describe the environment that you are currently in
