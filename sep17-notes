@@ -1,0 +1,18 @@
+Shell wildcards
+========================
+
+- * -> match everything
+	ex. *c --> any file ending in c
+- ? -> match any single character
+- [abc] -> match any sincgle character from the set 'abc'
+	- ranges can by specified using a dash e.g. '[a-z]' -> any lowercase letter
+	- can have multiple ranges
+	- negate a set with a bang e.g '[!a-z] -> any char not lowercase
+
+wildcards are evaluated in the shell not the script we are running.
+
+- command; command -> executes both commands even if first fails
+- command && command -> executes second only if first one successful
+- command || command -> executes only first if successful, executes second if first fails
+
+- 
